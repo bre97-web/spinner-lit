@@ -1,0 +1,32 @@
+.spinnerBox {
+    position: relative;
+    margin: 8px;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    outline: 8px solid rgb(240, 240, 240);
+    border-radius: 9999px;
+    animation: rotateKey 1s cubic-bezier(.45,.19,.5,.73) infinite;
+    transform-origin: center;
+}
+.spinnerBox::after {
+    content: '';
+    position: absolute;
+    margin-top: -5.25px;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background-color: red;
+}
+@keyframes rotateKey {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
