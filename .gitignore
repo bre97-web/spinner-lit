@@ -1,0 +1,11 @@
+node_modules
+*.js
+!all.js
+!css-to-ts.js
+!*.css
+!demo/*
+*.css.ts
+*.map
+*.d.ts
+!types/*.d.ts
+.wireit/

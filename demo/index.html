@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Test</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style rel="stylesheet">
+        
+    </style>
+
+    <script type="module">
+        /**
+         * Import lit component in right here.
+         */ 
+
+        import "../button/outlined-button.js"
+    </script>
+
+    <script>
+        console.log('Lit Local Server is started.');
+    </script>
+</head>
+<body>
+    <header class="border-b backdrop-blur-md px-4 py-2 sticky top-0 z-50">
+        <h1 class="font-black">Hello Lit Component Template</h1>
+        <p class="text-xs">Local Server</p>
+    </header>
+
+    <main class="relative container mx-auto mt-16 space-y-32">
+
+        <div class="flex flex-col items-center">
+            <outlined-button>
+                <p class="text-xl">
+                    Started
+                </p>
+            </outlined-button>
+        </div>
+
+        <div class="flex flex-col gap-8">
+
+            <label class="flex flex-col gap-2">
+                <h1 class="font-semibold">Run the sample code for this project</h1>
+                <div class="border px-4 py-2 rounded-md hover:shadow-md">
+                    <p>npm run test</p>
+                </div>
+            </label>
+
+            <label class="flex flex-col gap-2">
+                <h1 class="font-semibold">Modify the ts file of the button folder of the sample code, Start building the project</h1>
+                <div class="border px-4 py-2 rounded-md hover:shadow-md">
+                    <p>npm run build</p>
+                </div>
+            </label>
+
+            <label class="flex flex-col gap-2">
+                <h1 class="font-semibold">If the compilation of your css files is skipped, please allow the following directives</h1>
+                <div class="border px-4 py-2 rounded-md hover:shadow-md">
+                    <p>npm run css</p>
+                    <p>npm run ts</p>
+                </div>
+            </label>
+
+        </div>
+    </main>
+
+</body>
+</html>

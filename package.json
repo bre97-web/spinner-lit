@@ -1,0 +1,88 @@
+{
+  "name": "lit-component-temp",
+  "version": "1.0.0",
+  "description": "template",
+  "author": "bre97-web",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "scripts": {
+    "build": "wireit",
+    "build:ts": "wireit",
+    "build:css-to-ts": "wireit",
+    "css": "node css-to-ts.js",
+    "ts": "tsc --pretty",
+    "test": "npx web-dev-server --open /demo/ --node-resolve"
+  },
+  "type": "module",
+  "files": [
+    "**/*.js",
+    "**/*.js.map",
+    "**/*.d.ts",
+    "**/*.scss",
+    "!demo/**",
+    "!css-to-ts.js",
+    "!web-test-runner.config.js",
+    "!**/test/**",
+    "!**/testing/**",
+    "!**/*_test.*",
+    "!.wireit/**",
+    "!catalog"
+  ],
+  "dependencies": {
+    "lit": "^2.8.0",
+    "tslib": "^2.6.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.3.0",
+    "express": "^4.18.2",
+    "glob": "^10.3.3",
+    "typescript": "^5.1.6",
+    "wireit": "^0.10.0"
+  },
+  "wireit": {
+    "build": {
+      "dependencies": [
+        "build:ts"
+      ]
+    },
+    "build:ts": {
+      "command": "node css-to-ts.js && tsc --pretty",
+      "files": [
+        "tsconfig.json",
+        "**/*.ts",
+        "!**/*.d.ts",
+        "!**/*.css.ts",
+        "!catalog"
+      ],
+      "output": [
+        ".tsbuildinfo",
+        "**/*.js",
+        "**/*.js.map",
+        "**/*.d.ts",
+        "!css-to-ts.js",
+        "!web-test-runner.config.js",
+        "!types/",
+        "!catalog"
+      ],
+      "clean": "if-file-deleted"
+    },
+    "build:css-to-ts": {
+      "command": "node css-to-ts.js",
+      "files": [
+        "css-to-ts.js"
+      ],
+      "output": [
+        "**/*.css.ts",
+        "!catalog"
+      ],
+      "clean": "if-file-deleted"
+    }
+  }
+}
