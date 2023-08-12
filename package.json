@@ -1,17 +1,17 @@
 {
-  "name": "lit-component-temp",
-  "version": "1.0.0",
-  "description": "template",
+  "name": "spinner-lit",
+  "version": "0.0.1",
+  "description": "A simple spinner(loading) web component, build with Lit.",
   "author": "bre97-web",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/bre97-web/spinner-lit"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/bre97-web/spinner-lit/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/bre97-web/spinner-lit",
   "scripts": {
     "build": "wireit",
     "build:ts": "wireit",
@@ -25,7 +25,6 @@
     "**/*.js",
     "**/*.js.map",
     "**/*.d.ts",
-    "**/*.scss",
     "!demo/**",
     "!css-to-ts.js",
     "!web-test-runner.config.js",
