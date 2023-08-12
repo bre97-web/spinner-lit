@@ -1,7 +1,7 @@
 {
   "name": "spinner-lit",
   "version": "0.0.1",
-  "author": "bre97-npm",
+  "author": "bre97-web",
   "description": "A simple spinner(loading) web component, build with Lit.",
   "license": "ISC",
   "repository": {
@@ -21,31 +21,33 @@
     "build": "wireit",
     "build:ts": "wireit",
     "build:css-to-ts": "wireit",
-    "css": "node css-to-ts.js",
+    "css": "node ./config/css-to-ts.js",
     "ts": "tsc --pretty",
     "test": "exit 0",
     "test:demo": "npx web-dev-server --open /demo/ --node-resolve",
     "dev": "vite",
-    "build:demo": "tsc && vite build"
+    "build:demo": "tsc && vite build",
+    "publish:npm": "node ./config/publish-to-npm.js && npm run format:json",
+    "publish:gpr": "node ./config/publish-to-gpr.js && npm run format:json",
+    "format:json": "npx prettier --write package.json"
   },
   "type": "module",
   "files": [
     "**/*.js",
     "**/*.js.map",
     "**/*.d.ts",
+    "!config/**",
     "!docs/**",
     "!vite.config.ts",
     "!demo/**",
-    "!css-to-ts.js",
-    "!web-test-runner.config.js",
     "!**/test/**",
     "!**/testing/**",
     "!**/*_test.*",
-    "!.wireit/**",
-    "!catalog"
+    "!.wireit/**"
   ],
   "dependencies": {
     "lit": "^2.8.0",
+    "prettier": "^3.0.1",
     "tslib": "^2.6.1"
   },
   "devDependencies": {
@@ -67,6 +69,7 @@
       "files": [
         "tsconfig.json",
         "**/*.ts",
+        "!config/**",
         "!**.config.ts",
         "!**/*.d.ts",
         "!**/*.css.ts",
