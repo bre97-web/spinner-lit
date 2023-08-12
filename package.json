@@ -36,16 +36,14 @@
     "**/*.js",
     "**/*.js.map",
     "**/*.d.ts",
+    "!config/**",
     "!docs/**",
     "!vite.config.ts",
     "!demo/**",
-    "!css-to-ts.js",
-    "!web-test-runner.config.js",
     "!**/test/**",
     "!**/testing/**",
     "!**/*_test.*",
-    "!.wireit/**",
-    "!catalog"
+    "!.wireit/**"
   ],
   "dependencies": {
     "lit": "^2.8.0",
@@ -71,6 +69,7 @@
       "files": [
         "tsconfig.json",
         "**/*.ts",
+        "!config/**",
         "!**.config.ts",
         "!**/*.d.ts",
         "!**/*.css.ts",
