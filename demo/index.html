@@ -7,7 +7,9 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style rel="stylesheet">
-        
+        :root, *, ::before, ::after {
+            --bw-sys-color-primary: blue;
+        }
     </style>
 
     <script type="module">
@@ -16,6 +18,7 @@
          */ 
 
         import "../circle-spinner/circle-spinner.js"
+        import "../circle-spinner/triangle-circle-spinner.js"
     </script>
 
     <script>
@@ -35,6 +38,11 @@
             <circle-spinner variant="large"></circle-spinner>
         </div>
 
+        <div class="flex flex-row">
+            <triangle-circle-spinner variant="small"></triangle-circle-spinner>
+            <triangle-circle-spinner></triangle-circle-spinner>
+            <triangle-circle-spinner variant="large"></triangle-circle-spinner>
+        </div>
     </main>
 
 </body>

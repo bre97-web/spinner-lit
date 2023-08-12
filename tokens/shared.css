@@ -1,0 +1,5 @@
+:root, *, ::before, ::after {
+    --bw-sys-color-primary: red;
+    --bw-sys-color-surface: rgb(240, 240, 240);
+    
+}

@@ -1,6 +1,6 @@
 .spinnerBox[data-variant="small"] {
     --bw-sys-scale: 0.75;
-    --bw-sys-offset-margin: 0 10px 0;
+    --bw-sys-offset-margin: 0 -4px 0;
 }
 .spinnerBox {
     --bw-sys-scale: 1;
@@ -9,19 +9,19 @@
 }
 .spinnerBox[data-variant="large"] {
     --bw-sys-scale: 1.25;
-    --bw-sys-offset-margin: 0 20px 0;
+    --bw-sys-offset-margin: 0 4px 0;
 }
 
 .spinnerBox {
     position: relative;
     margin: var(--bw-sys-offset-margin);
     padding: 0;
-    width: 26px;
-    height: 26px;
+    width: 34px;
+    height: 34px;
     background-color: transparent;
-    outline: 8px solid var(--bw-sys-color-surface);
     border-radius: var(--bw-sys-rouneded);
-    animation: rotateKey 1s cubic-bezier(.45,.19,.5,.73) infinite;
+    overflow: hidden;
+    animation: rotateKey 1s linear infinite;
     transform-origin: center;
     scale: var(--bw-sys-scale);
 }
@@ -29,13 +29,12 @@
     content: '';
     position: absolute;
     display: block;
-    margin-top: -5.25px;
+    margin: 0;
     padding: 0;
     left: 0;
     top: 0;
-    width: 8px;
-    height: 8px;
-    border-radius: var(--bw-sys-rouneded);
+    width: 50%;
+    height: 50%;
     background-color: var(--bw-sys-color-primary);
 }
 @keyframes rotateKey {
