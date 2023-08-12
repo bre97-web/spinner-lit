@@ -17,8 +17,9 @@
          * Import lit component in right here.
          */ 
 
-        import "../circle-spinner/circle-spinner.js"
-        import "../circle-spinner/triangle-circle-spinner.js"
+        import "../circle-spinner/circle-spinner"
+        import "../circle-spinner/triangle-circle-spinner"
+        import "../square-spinner/square-spinner"
     </script>
 
     <script>
@@ -42,6 +43,16 @@
             <triangle-circle-spinner variant="small"></triangle-circle-spinner>
             <triangle-circle-spinner></triangle-circle-spinner>
             <triangle-circle-spinner variant="large"></triangle-circle-spinner>
+        </div>
+
+        <div class="flex flex-row gap-4">
+            <square-spinner variant="small"></square-spinner>
+            <square-spinner></square-spinner>
+            <square-spinner variant="large"></square-spinner>
+
+            <square-spinner hasBlur variant="small"></square-spinner>
+            <square-spinner hasBlur></square-spinner>
+            <square-spinner hasBlur variant="large"></square-spinner>
         </div>
     </main>
 

@@ -7,8 +7,8 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "module": "es2015",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitOverride": true,
@@ -16,9 +16,6 @@
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
-    "paths": {
-      "@/*": ["./*"]
-    },
     "sourceMap": true,
     "inlineSources": true,
     "strict": true,
@@ -26,5 +23,5 @@
     "target": "es2020",
     "types": ["lit"]
   },
-  "exclude": ["catalog", "**/demo"]
+  "exclude": ["catalog", "**/demo", "vite.config.ts"]
 }

@@ -1,13 +1,17 @@
 import { Spinner } from "../../spinner/spinner";
 import { html } from "lit";
 
-export class CircleSpinner extends Spinner {    
+export class SquareSpinner extends Spinner {
+
     protected override render() {
         return html`
             <div
+                data-hasBlur=${this.hasBlur}
                 data-variant=${this.variant}
-                class="spinnerBox"
-            ></div>
+                class="square-box"
+            >
+                <div></div>
+            </div>
         `
     }
 }

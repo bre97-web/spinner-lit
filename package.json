@@ -32,6 +32,8 @@
     "**/*.js",
     "**/*.js.map",
     "**/*.d.ts",
+    "!docs/**",
+    "!vite.config.ts",
     "!demo/**",
     "!css-to-ts.js",
     "!web-test-runner.config.js",
@@ -64,6 +66,7 @@
       "files": [
         "tsconfig.json",
         "**/*.ts",
+        "!**.config.ts",
         "!**/*.d.ts",
         "!**/*.css.ts",
         "!catalog"
@@ -87,7 +90,8 @@
       ],
       "output": [
         "**/*.css.ts",
-        "!catalog"
+        "!catalog",
+        "demo/**/*"
       ],
       "clean": "if-file-deleted"
     }
