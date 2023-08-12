@@ -21,12 +21,15 @@
     "build": "wireit",
     "build:ts": "wireit",
     "build:css-to-ts": "wireit",
-    "css": "node css-to-ts.js",
+    "css": "node ./config/css-to-ts.js",
     "ts": "tsc --pretty",
     "test": "exit 0",
     "test:demo": "npx web-dev-server --open /demo/ --node-resolve",
     "dev": "vite",
-    "build:demo": "tsc && vite build"
+    "build:demo": "tsc && vite build",
+    "publish:npm": "node ./config/publish-to-npm.js && npm run format:json",
+    "publish:gpk": "node ./config/publish-to-gpk.js && npm run format:json",
+    "format:json": "npx prettier --write package.json"
   },
   "type": "module",
   "files": [
@@ -46,6 +49,7 @@
   ],
   "dependencies": {
     "lit": "^2.8.0",
+    "prettier": "^3.0.1",
     "tslib": "^2.6.1"
   },
   "devDependencies": {

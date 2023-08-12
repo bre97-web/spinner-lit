@@ -1,7 +1,6 @@
 node_modules
 *.js
-!all.js
-!css-to-ts.js
+!config/*
 !*.css
 !demo/*
 *.css.ts
