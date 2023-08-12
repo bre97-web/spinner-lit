@@ -6,13 +6,17 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bre97-web/spinner-lit"
+    "url": "git+https://github.com/bre97-web/spinner-lit.git"
   },
   "bugs": {
     "url": "https://github.com/bre97-web/spinner-lit/issues"
   },
   "homepage": "https://github.com/bre97-web/spinner-lit",
-  "keywords": ["loading", "spinner", "component"],
+  "keywords": [
+    "loading",
+    "spinner",
+    "component"
+  ],
   "scripts": {
     "build": "wireit",
     "build:ts": "wireit",
