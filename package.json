@@ -1,8 +1,8 @@
 {
   "name": "spinner-lit",
   "version": "0.0.1",
+  "author": "bre97-npm",
   "description": "A simple spinner(loading) web component, build with Lit.",
-  "author": "bre97-web",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
     "url": "https://github.com/bre97-web/spinner-lit/issues"
   },
   "homepage": "https://github.com/bre97-web/spinner-lit",
+  "keywords": ["loading", "spinner", "component"],
   "scripts": {
     "build": "wireit",
     "build:ts": "wireit",
