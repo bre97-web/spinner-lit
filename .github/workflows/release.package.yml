@@ -38,9 +38,6 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -52,6 +49,6 @@ jobs:
       - run: npm run css
       - run: npm run ts
       - run: npm run publish:npm
-      - run: npm publish -access public
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_NPM_TOKEN }}

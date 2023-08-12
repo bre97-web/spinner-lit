@@ -5,6 +5,7 @@ export default defineConfig({
     base: 'spinner-lit',
     root: './demo/',
     build: {
-        outDir: '../docs'
+        outDir: '../docs',
+        emptyOutDir: true,
     }
 });
