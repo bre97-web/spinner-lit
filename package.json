@@ -23,6 +23,7 @@
     "build:css-to-ts": "wireit",
     "css": "node css-to-ts.js",
     "ts": "tsc --pretty",
+    "dev": "vite",
     "test": "npx web-dev-server --open /demo/ --node-resolve"
   },
   "type": "module",
@@ -48,6 +49,7 @@
     "express": "^4.18.2",
     "glob": "^10.3.3",
     "typescript": "^5.1.6",
+    "vite": "^4.4.9",
     "wireit": "^0.10.0"
   },
   "wireit": {
