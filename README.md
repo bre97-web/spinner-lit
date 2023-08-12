@@ -1,13 +1,36 @@
-# lit-component-template
+# spinner-lit
+A simple spinner web component.
+*beta now.*
 
-## Run in browser
-Run the sample code for this project
+![](./docs/imgs/intro.png)
 
+
+## Usage
+
+### Import module
+    - JavaScript
+    - TypeScript (**Recommmand**)
+```js
+// JavaScript
+import 'spinner-lit/circle-spinner/circle-spinner.js'
 ```
-npm run test
+
+```ts
+// TypeScript
+import 'spinner-lit/circle-spinner/circle-spinner'
 ```
 
-## Build
+### In HTML
+```html
+<circle-spinner variant="small"></circle-spinner>
+
+<circle-spinner></circle-spinner>
+
+<circle-spinner variant="large"></circle-spinner>
+```
+
+## Dev
+### Build
 Modify the ts file of the button folder of the sample code, Start building the project
 
 ```
@@ -22,4 +45,11 @@ npm run css
 
 ```
 npm run ts
+```
+
+### Run in browser
+Run the sample code for this project
+
+```
+npm run test
 ```
