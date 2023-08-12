@@ -26,5 +26,5 @@
     "target": "es2020",
     "types": ["lit"]
   },
-  "exclude": ["catalog", "**/demo"]
+  "exclude": ["catalog", "**/demo", "vite.config.ts"]
 }
