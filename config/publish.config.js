@@ -6,5 +6,5 @@ export default {
     /**
      * Github Package
      */
-    gpk: "@bre97-web/spinner-lit"
+    gpr: "@bre97-web/spinner-lit"
 }

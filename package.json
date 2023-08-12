@@ -28,7 +28,7 @@
     "dev": "vite",
     "build:demo": "tsc && vite build",
     "publish:npm": "node ./config/publish-to-npm.js && npm run format:json",
-    "publish:gpk": "node ./config/publish-to-gpk.js && npm run format:json",
+    "publish:gpk": "node ./config/publish-to-gpr.js && npm run format:json",
     "format:json": "npx prettier --write package.json"
   },
   "type": "module",
