@@ -23,8 +23,9 @@
     "build:css-to-ts": "wireit",
     "css": "node css-to-ts.js",
     "ts": "tsc --pretty",
+    "test": "npx web-dev-server --open /demo/ --node-resolve",
     "dev": "vite",
-    "test": "npx web-dev-server --open /demo/ --node-resolve"
+    "build:demo": "tsc && vite build"
   },
   "type": "module",
   "files": [
