@@ -6,7 +6,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bre97-web/spinner-lit.git"
+    "url": "https://github.com/bre97-web/spinner-lit.git"
   },
   "bugs": {
     "url": "https://github.com/bre97-web/spinner-lit/issues"
@@ -23,7 +23,8 @@
     "build:css-to-ts": "wireit",
     "css": "node css-to-ts.js",
     "ts": "tsc --pretty",
-    "test": "npx web-dev-server --open /demo/ --node-resolve",
+    "test": "exit 0",
+    "test:demo": "npx web-dev-server --open /demo/ --node-resolve",
     "dev": "vite",
     "build:demo": "tsc && vite build"
   },
