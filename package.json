@@ -1,12 +1,15 @@
 {
-  "name": "spinner-lit",
-  "version": "0.0.1",
+  "name": "@bre97-web/spinner-lit",
+  "version": "0.0.2",
   "author": "bre97-npm",
   "description": "A simple spinner(loading) web component, build with Lit.",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bre97-web/spinner-lit.git"
+    "url": "https://github.com/bre97-web/spinner-lit.git"
+  },
+  "publishConfig": {
+    "@bre97-web:registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/bre97-web/spinner-lit/issues"
