@@ -16,9 +16,6 @@
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
-    "paths": {
-      "@/*": ["./*"]
-    },
     "sourceMap": true,
     "inlineSources": true,
     "strict": true,

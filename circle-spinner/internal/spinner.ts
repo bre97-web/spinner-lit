@@ -1,4 +1,4 @@
-import { Spinner } from "@/spinner/spinner";
+import { Spinner } from "../../spinner/spinner";
 import { html } from "lit";
 
 export class CircleSpinner extends Spinner {    
