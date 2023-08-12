@@ -1,0 +1,47 @@
+.spinnerBox[data-variant="small"] {
+    --bw-sys-scale: 0.75;
+    --bw-sys-offset-margin: 0 -4px 0;
+}
+.spinnerBox {
+    --bw-sys-scale: 1;
+    --bw-sys-rouneded: 9999px;
+    --bw-sys-offset-margin: 0px;
+}
+.spinnerBox[data-variant="large"] {
+    --bw-sys-scale: 1.25;
+    --bw-sys-offset-margin: 0 4px 0;
+}
+
+.spinnerBox {
+    position: relative;
+    margin: var(--bw-sys-offset-margin);
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border-radius: var(--bw-sys-rouneded);
+    overflow: hidden;
+    animation: rotateKey 1s linear infinite;
+    transform-origin: center;
+    scale: var(--bw-sys-scale);
+}
+.spinnerBox::after {
+    content: '';
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    background-color: var(--bw-sys-color-primary);
+}
+@keyframes rotateKey {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

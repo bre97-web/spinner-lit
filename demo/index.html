@@ -7,7 +7,9 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style rel="stylesheet">
-        
+        :root, *, ::before, ::after {
+            --bw-sys-color-primary: blue;
+        }
     </style>
 
     <script type="module">
@@ -15,7 +17,8 @@
          * Import lit component in right here.
          */ 
 
-        import "../button/outlined-button.js"
+        import "../circle-spinner/circle-spinner.js"
+        import "../circle-spinner/triangle-circle-spinner.js"
     </script>
 
     <script>
@@ -29,39 +32,16 @@
     </header>
 
     <main class="relative container mx-auto mt-16 space-y-32">
-
-        <div class="flex flex-col items-center">
-            <outlined-button>
-                <p class="text-xl">
-                    Started
-                </p>
-            </outlined-button>
+        <div class="flex flex-row">
+            <circle-spinner variant="small"></circle-spinner>
+            <circle-spinner></circle-spinner>
+            <circle-spinner variant="large"></circle-spinner>
         </div>
 
-        <div class="flex flex-col gap-8">
-
-            <label class="flex flex-col gap-2">
-                <h1 class="font-semibold">Run the sample code for this project</h1>
-                <div class="border px-4 py-2 rounded-md hover:shadow-md">
-                    <p>npm run test</p>
-                </div>
-            </label>
-
-            <label class="flex flex-col gap-2">
-                <h1 class="font-semibold">Modify the ts file of the button folder of the sample code, Start building the project</h1>
-                <div class="border px-4 py-2 rounded-md hover:shadow-md">
-                    <p>npm run build</p>
-                </div>
-            </label>
-
-            <label class="flex flex-col gap-2">
-                <h1 class="font-semibold">If the compilation of your css files is skipped, please allow the following directives</h1>
-                <div class="border px-4 py-2 rounded-md hover:shadow-md">
-                    <p>npm run css</p>
-                    <p>npm run ts</p>
-                </div>
-            </label>
-
+        <div class="flex flex-row">
+            <triangle-circle-spinner variant="small"></triangle-circle-spinner>
+            <triangle-circle-spinner></triangle-circle-spinner>
+            <triangle-circle-spinner variant="large"></triangle-circle-spinner>
         </div>
     </main>
 
