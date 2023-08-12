@@ -1,12 +1,7 @@
-import { LitElement, html } from "lit";
-import { property } from "lit/decorators/property.js";
+import { Spinner } from "@/spinner/spinner";
+import { html } from "lit";
 
-export type SpinnerVariant = 'small' | 'normal' | 'large'
-
-export class Spinner extends LitElement {
-    
-    @property({ type: String }) public variant = 'normal' as SpinnerVariant
-
+export class CircleSpinner extends Spinner {    
     protected override render() {
         return html`
             <div
