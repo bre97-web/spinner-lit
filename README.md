@@ -31,7 +31,7 @@ import 'spinner-lit/circle-spinner/circle-spinner'
 
 ## Dev
 ### Build
-Modify the ts file of the button folder of the sample code, Start building the project
+Modify the ts file of the code, Start building the project
 
 ```
 npm run build
@@ -48,8 +48,12 @@ npm run ts
 ```
 
 ### Run in browser
-Run the sample code for this project
+Run the code for this project, or use Vite.
 
 ```
 npm run test
+```
+
+```
+npm run dev
 ```
