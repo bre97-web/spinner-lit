@@ -1,8 +1,13 @@
 # spinner-lit
+A simple spinner web component.
+*beta now.*
+
+![](./docs/imgs/intro.png)
+
 
 ## Usage
 
-1. Import module
+### Import module
     - JavaScript
     - TypeScript (**Recommmand**)
 ```js
@@ -15,7 +20,7 @@ import 'spinner-lit/circle-spinner/circle-spinner.js'
 import 'spinner-lit/circle-spinner/circle-spinner'
 ```
 
-2. In HTML
+### In HTML
 ```html
 <circle-spinner variant="small"></circle-spinner>
 
